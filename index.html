@@ -4,67 +4,88 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./resources/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
     <title>Cameron's Portfolio</title>
 </head>
 
 <body>
-    <header class="main-header">
-        <h1 id="bio-name">Cameron Clark</h1>
-        <img src="./resources/images/CameronClarkBio.jpg" alt="Cameron Clark's Portrait"/>
-        <nav>
-            <ul>
-                <li>
-                <a href="#about-me">About me</a>
-                </li>
-                <li>
-                <a href="#search-engine-optimization"> Search Engine Optimization</a>
-                </li>
-                <li>
-                <a href="#online-reputation-management">Online Reputation Management</a>
-                </li>
-                <li>
-                <a href="#social-media-marketing">Social Media Marketing</a>
-                </li>
-                <li>
-                <a href="#contact-me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="https://github.com/sankeatan" target='_blank' class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+              </svg>
+            <strong>The Digial Hobbit</strong>
+            </a>
+        </div>
+      </div>
     </header>
-  
     <main>
-        <article id="about-me" class="project-cards">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </article>
-    <section class="content">
-        
-        <article id="search-engine-optimization" class="project-cards big">
-            <img src="./resources/images/placeholder.png" class="float-left" alt="Search Engine Optimization Photo"/>
-            <h2>Search Engine Optimization</h2>
-        </article>
-        
-        <article id="online-reputation-management" class="project-cards small">
-            <img src="./resources/images/placeholder.png" class="float-right" alt="Online Reputation Management Photo"/>
-            <h3>Online Reputation Management</h3>
-        </article>
-       
-        <article id="social-media-marketing" class="project-cards small">
-            <img src="./resources/images/placeholder.png" class="float-left" alt="Social Media Marketing Photo"/>
-            <h3>Social Media Marketing</h3>
-        </article>
-    </section>
-    <article id="contact-me" class="project-cards">
-        <h2>Contact Me</h2>
-        <p>Email: fakeaddress@fakecompany.edu</p>
-        <p>Phone: 407 867 5309</p>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                    <img src="resources/images/CameronClarkBio.jpg">
+                    <h3>Cameron Clark</h3>
+                    
+                    <p>I'm full of love, myself, and stack</p>
+                    <p>Download my resume</p>
+                    <a href="resources/images/Cameron Clark Resume.pdf" download class="btn btn-sm btn-outline-secondary">PDF</a>
+            </div>
+        </div>
+      </section> 
+    
+      <div class="py-5 bg-light">
+        <div class="container">
+    
+          <div class="row justify-content-evenly row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./resources/images/GardenifyPic.png"class="bd-placeholder-img card-img-top" width="100%" height="225" aria-label="Gardenify Project" >
+    
+                <div class="card-body">
+                  <p class="card-text">A small application to help you search for veggies and other garden plants alongside your local weather conditions based on</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://github.com/sankeatan/Gardenify" target="_blank" class="btn btn-sm btn-outline-secondary">Git</a>
+                      <a href="https://sankeatan.github.io/Gardenify/" target="_blank" class="btn btn-sm btn-outline-secondary">Live</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./resources/images/WeatherDashboardPic.png"class="bd-placeholder-img card-img-top" width="100%" height="225" aria-label="Weather Dashboard Project" >
+      
+                  <div class="card-body">
+                    <p class="card-text">A small weather dashboard to check forecasts by city, also gives a 5 day weather forecast and remembers cities you've searched in the past</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://github.com/sankeatan/Weather-Dashboard" target="_blank" class="btn btn-sm btn-outline-secondary">Git</a>
+                        <a href="https://sankeatan.github.io/Weather-Dashboard/" target="_blank" class="btn btn-sm btn-outline-secondary">Live</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    
     </main>
-    <footer>
-        <p>
-            &copy; 2021 Fake Company Name
-        </p>
-    </footer>
-</body>
-
+    <footer class="footer row mt-auto py-3 bg-light">
+        <div class="container col">
+          <span class="text-muted">Phone: ‪407 391-1071 <br>Email: cameron.clark1110@gmail.com</span>
+          <a href="https://www.linkedin.com/in/cameronclark1110/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+        </a>
+        </div>
+      </footer>
+    
+    </body>
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
